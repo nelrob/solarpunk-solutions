@@ -1,0 +1,25 @@
+@import "variables.scss";
+@import "styles.scss";
+
+
+
+
+@include breakpoint(610px){
+    footer {
+        span{
+            font-size: small;
+        }
+        #footer-img  {
+            width:40%;
+        }
+        .socmed_logos > img {
+            width:2rem;
+        }
+    }
+}
+
+
+
+
+
+

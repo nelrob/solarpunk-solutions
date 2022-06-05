@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Faustina:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+$mainFont: 'Akshar', sans-serif;
+$bodyFont: 'Faustina', serif;
+
+// COLOR VARIABLES
+$color-lightGreen: #939B62;
+$color-darkGreen: #383C24;
+$color-yellow: #FFD56B;
+$color-orange: #FFB26B;
+$color-offwhite: #F7F7F7;
+
+// FONT VARIABLES
+$font-large: 60px;
+$font-title: 28px;
+$font-sub: 23px;
+$font-bodytext: 16px;
+
+h1,h2,h3,h4{
+    font-family: $mainFont;
+}
+
+@mixin center {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin hover {
+    &:hover{
+        background-color: $color-darkGreen;
+        color: $color-offwhite;
+        cursor: pointer;
+    }
+}
+
+@mixin breakpoint ($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
